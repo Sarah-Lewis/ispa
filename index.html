@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>ISPA</title>
+  </head>
+  
+  <body>
+    <h3>ISPA cheat sheet</h3>
+
+    <!-- SEARCH BAR --> <input id="myInput" type="text" placeholder="Search..">
+    <div id="myDIV">
+               
+      <div class="accordion" id="accordionExample">  
+        <!-- Catheter --> 
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Catheter
+                </button>
+            </h2>
+          </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <ol>
+                    <li>Q1</li>
+                    <li>Q2</li>
+                    <li>Q3</li>
+                  </ol>   
+                  <!-- NHS BUTTON --> 
+                    <button type="button" id="NHS" class="NHS"><a href="https://www.nhs.uk/conditions/urinary-catheters/" target="_blank">NHS</button></a>
+                  <!-- TEXT ENTRY-->       
+                  <div class="form-group">
+                    <textarea placeholder="Write notes here..." class="form-control" id="myInput" id="exampleFormControlTextarea1" rows="3" cols="1"></textarea>
+                  </div>
+                  <!-- COPY BUTTON --> 
+                  <button class="copy" onclick="myFunction()">Copy</button> 
+                </div>
+              </div>
+        </div>
+
+        <!-- Wound Care -->
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Wound Care
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <ul> 
+                <li>Record under 'tissue viabilty'</li>
+              </ul>
+              <ol>
+                <li>Where is the wound?</li>
+                <li>Does patient have spare dressings at home?</li>
+                <li>How often does it need to be attended to?</li>
+                <li>If clips need to be removed, does the patient have a removal kit?</li>
+                <li>Does the patient have a temporary dressing on the wound?</li>
+              </ol> 
+              <!-- TEXT ENTRY-->        
+              <div class="form-group">
+                <textarea placeholder="Write notes here..." class="form-control" id="myInput" id="exampleFormControlTextarea1" rows="3" cols="1"></textarea>
+              </div>
+              <!-- COPY BUTTON -->
+              <button class="copy" onclick="myFunction()">Copy</button> 
+            </div>
+          </div>
+        </div>
+
+        <!-- HomeFirst -->
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                HomeFirst
+              </button>
+            </h2>
+          </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Joint service between SWFT & WCC. Must be referred by GP, nurse or social worker. Cannot come from family members or self-referral.
+                <!-- BUTTON --> 
+                  <br><button type="button" id="NHS" class="NHS"><a href="https://www.swft.nhs.uk/our-services/adults-out-hospital-services/homefirst" target="_blank">Link</button></a>
+              </div>
+            </div>
+        </div>
+
+        <!-- Macmillan -->
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Macmillan Nurses
+              </button>
+            </h2>
+          </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body"> 
+                <p> Specialist Palliative Care Community Service (Macmillan). Must be referred via form <strong>not</strong> via telephone.<br>They can provide;</p> 
+                <ul class="deff">
+                  <li>Assessment and care planning for patients with complex palliative care needs</li>
+                  <li>Psychological support for the patient and their families or carers</li>
+                  <li>Information on disease process, treatment, medication, local and national services</li>
+                  <li>Advice on symptom control</li>
+                </ul>
+                <!-- BUTTON --> 
+                  <br><button type="button" id="NHS" class="NHS"><a href="https://www.swft.nhs.uk/our-services/adults-out-hospital-services/specialist-palliative-care-community-service-macmillan" target="_blank">Link</button></a>
+              </div>
+            </div>
+        </div>
+        
+        <!-- Dictionary -->
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Dictionary
+              </button>
+            </h2>
+          </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li>Amoxicillin<p class="deff">Antibiotic used to treat bacterial infections</p>
+                  <li>B12<p class="deff">Injection given to address B12 deficiency</p>
+                  <li>Cellulitis</li><p class="deff">Skin infection that's treated with antibiotics, can be serious if it's not treated quickly</p>
+                  <li>Clexane<p class="deff">Injection used to treat/prevent blood clots forming inside the blood vessels</p></li>
+                  <li>Diarrhoea</li>
+                  <li>Glaucoma</li><p class="deff">A common eye condition - optic nerve becomes damaged caused by fluid building up in the eye. Can lead to loss of vision if not diagnosed/treated early, most common in adults aged 70+</p>
+                  <li>Palliative</li><p class="deff">Care provided in last 1-2 years of life</p>
+                  <li>Tinzaparin<p class="deff">Anticoagulant injected into stomach, usually administered in evening</p>
+                  <li>Syringe driver<p class="deff">Small battery-powered pump that delivers medication at a constant rate through a small tube under the skin. Sometimes called a continuous subcutaneous infusion.</p>
+                  <li> </li>
+                </ul>
+              
+                <!-- NHS BUTTON --> 
+                  <br><button type="button" id="NHS" class="NHS"><a href="#" target="_blank">NHS</button></a>
+              </div>
+            </div>
+        </div>
+           
+      </div>
+    </div>
+    
+    <!-- scripts --><div>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="JavaScript/java.js"></script>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+<!-- <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Wound Care</button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body"> 
+              <ol>
+                <li>Where is the wound?</li>
+                <li>Does patient have spare dressings at home?</li>
+		<li>How often does it need to be attended to?</li>
+		<li>If clips need to be removed, does the patient have a removal kit?</li>
+		<li>Does the patient have a temporary dressing on the wound?</li>
+              </ol>
+
+    Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
