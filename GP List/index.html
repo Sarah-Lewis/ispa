@@ -5,14 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Users/lewis_sarah1/Documents/GitHub/ispa/CSS/main.css">
   </head>
 
   <body>
-
     <div class="container">
-      <h2>GP List</h2> 
-      <!--Back button-->
-      <button type="button" id="back" class="back"><a href="/Users/lewis_sarah1/Documents/GitHub/ispa/index.html">&#8592 Back</button></a>
+      <h2>GP List</h2>
+      
+      <div id="back"> <!-- Back button -->
+        <button type="button" class="back_button"><a class="back_link" href="/Users/lewis_sarah1/Documents/GitHub/ispa/index.html">&#8592 Back</button></a>
+      </div>
+
       <input class="form-control" id="myInput" type="text" placeholder="Search..">
       <br>
       <table class="table table-bordered table-striped">
@@ -22,9 +25,9 @@
             <th>&#9742</th>
             <th>Team</th>
             <th>HomeFirst</th>
-            
           </tr>
         </thead>
+
         <tbody id="myTable">
           <tr><td>Abbey Medical Centre</td><td>01926 859955</td><td>IHT 7 (PBT WARWICK/KENILWORTH)</td><td>HOMEFIRST WARWICK</td></tr>
           <tr><td>Alcester Health Centre</td><td>01789 763060</td><td>IHT 10 (PBT ALCESTER)</td><td>STRATFORD HOMEFIRST</td></tr>
@@ -109,7 +112,6 @@
       
         </tbody>
       </table>
-      
       <!-- <p>Note that we start the search in tbody, to prevent filtering the table headers.</p> -->
     </div>
 
