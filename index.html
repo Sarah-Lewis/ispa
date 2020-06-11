@@ -1,230 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>GP list</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="/Users/lewis_sarah1/Desktop/NHS code/z.GP table/JS/java.js"></script>
+</head>
+<body>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/main.css">
-    <title>ISPA</title>
-  </head>
-  
-  <body>
-    <h3>ISPA cheat sheet</h3>
-
-    <!-- SEARCH BAR --> <input id="myInput" type="text" placeholder="Search..">
-    <div id="myDIV">
-               
-      <div class="accordion" id="accordionExample">  
-        <!-- 1) Catheter --> 
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Catheter
-                </button>
-            </h2>
-          </div>
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ol>
-                    <li>What is the problem with the catheter?</li>
-                    <li>Is the patient in any pain or discomfort?</li>
-                    <li>Do you have spare equipment at home?</li>
-                  </ol>   
-                  <!-- NHS BUTTON --> 
-                    <button type="button" id="NHS" class="NHS"><a href="https://www.nhs.uk/conditions/urinary-catheters/" target="_blank">NHS</button></a>
-                  <!-- TEXT ENTRY-->       
-                  <div class="form-group">
-                    <textarea placeholder="Write notes here..." class="form-control" id="myInput" id="exampleFormControlTextarea1" rows="3" cols="1"></textarea>
-                  </div>
-                  <!-- COPY BUTTON --> 
-                  <button class="copy" onclick="myFunction()">Copy</button> 
-                </div>
-              </div>
-        </div>
-
-        <!-- 2) Wound Care -->
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Wound Care
-              </button>
-            </h2>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body">
-              <ul> 
-                <li>Record under 'tissue viabilty'</li>
-              </ul>
-              <ol>
-                <li>Where is the wound?</li>
-                <li>Does patient have spare dressings?</li>
-                <li>How often does it need to be attended to?</li>
-                <li>If clips need to be removed, does the patient have a removal kit?</li>
-                <li>Does the patient have a temporary dressing on the wound?</li>
-              </ol> 
-              <!-- TEXT ENTRY-->        
-              <div class="form-group">
-                <textarea placeholder="Write notes here..." class="form-control" id="myInput" id="exampleFormControlTextarea1" rows="3" cols="1"></textarea>
-              </div>
-              <!-- COPY BUTTON -->
-              <button class="copy" onclick="myFunction()">Copy</button> 
-            </div>
-          </div>
-        </div>
-
-        <!-- 3) HomeFirst -->
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                HomeFirst
-              </button>
-            </h2>
-          </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
-                Joint service between SWFT & WCC. Must be referred by GP, nurse or social worker. Cannot come from family members or self-referral.
-                Split into HomeFirst Nursing and HomeFirst Therapy.<br> 
-                HF Nursing -> Referral to community-based nurse	-> Care package<br>
-                HF Therapy -> Refer to OT / Physio -> Equipment provision
-                <!-- BUTTON --> 
-                  <br><button type="button" id="NHS" class="NHS"><a href="https://www.swft.nhs.uk/our-services/adults-out-hospital-services/homefirst" target="_blank">Link</button></a>
-              </div>
-            </div>
-        </div>
-
-        <!-- 4) Macmillan -->
-        <div class="card">
-          <div class="card-header" id="headingFour">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Macmillan Nurses
-              </button>
-            </h2>
-          </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-              <div class="card-body"> 
-                <p> Specialist Palliative Care Community Service (Macmillan). Must be referred via form <strong>not</strong> via telephone.<br>They can provide;</p> 
-                <ul class="deff">
-                  <li>Assessment and care planning for patients with complex palliative care needs</li>
-                  <li>Psychological support for the patient and their families or carers</li>
-                  <li>Information on disease process, treatment, medication, local and national services</li>
-                  <li>Advice on symptom control</li>
-                </ul>
-                <!-- BUTTON --> 
-                  <br><button type="button" id="NHS" class="NHS"><a href="https://www.swft.nhs.uk/our-services/adults-out-hospital-services/specialist-palliative-care-community-service-macmillan" target="_blank">Link</button></a>
-              </div>
-            </div>
-        </div>
+<div class="container">
+  <h2>GP List</h2>
+  <!-- <p>Type something in the input field to search the table for first names, last names or emails:</p>   -->
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>GP</th>
+        <th>GP telephone</th>
+        <th>Team</th>
+        <th>HomeFirst</th>
         
-        <!-- 5) Dictionary -->
-        <div class="card">
-          <div class="card-header" id="headingFive">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                Dictionary
-              </button>
-            </h2>
-          </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-              <div class="card-body">
-                <ul>
-                  <li>Amoxicillin<p class="deff">Antibiotic used to treat bacterial infections</p>
-                  <li>B12<p class="deff">Injection given to address B12 deficiency</p>
-                  <li>Cellulitis</li><p class="deff">Skin infection that's treated with antibiotics, can be serious if it's not treated quickly</p>
-                  <li>Clexane<p class="deff">Injection used to treat/prevent blood clots forming inside the blood vessels</p></li>
-                  <li>Diarrhoea</li>
-                  <li>Glaucoma</li><p class="deff">A common eye condition - optic nerve becomes damaged caused by fluid building up in the eye. Can lead to loss of vision if not diagnosed/treated early, most common in adults aged 70+</p>
-                  <li>Palliative</li><p class="deff">Care provided in last 1-2 years of life</p>
-                  <li>Tinzaparin<p class="deff">Anticoagulant injected into stomach, usually administered in evening</p>
-                  <li>Suture<p class="deff">Stitches</p>
-                  <li>Syringe driver<p class="deff">Battery-powered pump that delivers medication at a constant rate through a small tube under the skin. Sometimes called a continuous subcutaneous infusion.</p>
-                  <li> </li>
-                </ul>
-              </div>
-            </div>
-        </div>
-           
-        <!-- 6) Numbers -->
-        <div class="card">
-          <div class="card-header" id="headingSix">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              Numbers
-              </button>
-            </h2>
-          </div>
-          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-            <div class="card-body">
-          <p>Warwick Hosp: 01926 495321</p>    
-            </div>
-          </div>
-        </div>
-
-        <!-- 7) Insulin -->
-        <div class="card">
-          <div class="card-header" id="headingSeven">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-              Insulin
-              </button>
-            </h2>
-          </div>
-          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-            <div class="card-body">
-              <ul>
-                <li>How often/how many times a day is insulin required?</li>
-                <li>When is the first dose needed?</li>
-                <li>Is there medication and a directive at home?</li>
-                <li>Are the visits required in the morning or evening?</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-     
-     
-     
-     
-     
-      </div>
-    </div>
-    
-    <!-- scripts --><div>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="JavaScript/java.js"></script>
-    </div>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr><td>Abbey Medical Centre</td><td>01926 859955</td><td>IHT 7 (PBT WARWICK/KENILWORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Alcester Health Centre</td><td>01789 763060</td><td>IHT 10 (PBT ALCESTER)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Arbury Medical Centre</td><td>024 7638 8555</td><td>IHT 2 (PBT CAMPHILL)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Arden Medical Centre</td><td>01789 414942</td><td>IHT 9 (STRATFORD)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Arrow Lodge Surgery</td><td>01789 763293</td><td>IHT 10 (PBT ALCESTER)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Atherstone Surgery</td><td>01827 713664</td><td>IHT 1 (PBT ATHERSTONE)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Avonside Health Centre</td><td>01926 492311</td><td>IHT 7 (PBT WARWICK/KENILWORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Bedworth Health Centre</td><td>024 7631 5432</td><td>IHT 4 (PBT BEDWORTH)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Beech Tree Medical Centre</td><td>01788 561319</td><td>IHT 5 (PBT RUGBY SOUTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Bennfield Surgery</td><td>01788 540860</td><td>IHT 6 (PBT RUGBY NORTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Bidford Surgery</td><td>01789 414942</td><td>IHT 9 (STRATFORD)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Bishops Itchington Surgery</td><td>01295 678124</td><td>PBT SOUTHAM</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Bridge House Medical Centre</td><td>01789 292201</td><td>IHT 9 (STRATFORD)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Brookside Surgery (Stretton.O.D)</td><td>024 7654 2525</td><td>IHT 5 (PBT RUGBY SOUTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Brownsover Medical Centre</td><td>01788 435214</td><td>IHT 6 (PBT RUGBY NORTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Budbrooke Medical Centre</td><td>01926 492311</td><td>IHT 7 (PBT WARWICK/KENILWORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Bulkington Surgery</td><td>024 7673 3020</td><td>IHT 4 (PBT BEDWORTH)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Camphill Surgery</td><td>024 7639 0008</td><td>IHT 2 (PBT CAMPHILL)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Castle Medical Centre</td><td>01926 857331</td><td>IHT 7 (PBT WARWICK/KENILWORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Central Surgery (Corporation St.)</td><td>01788 524366</td><td>IHT 5 (PBT RUGBY SOUTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Central Surgery (The Green)</td><td>01788 818939</td><td>IHT 5 (PBT RUGBY SOUTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Chancery Lane Surgery</td><td>024 7639 4766</td><td>IHT 1 (PBT ATHERSTONE)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Chapel End Surgery</td><td>024 7639 3388</td><td>IHT 2 (PBT CAMPHILL)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Clarendon Lodge medical</td><td>01926 331401</td><td>IHT 8 NORTH (PBT LEAMINGTON NORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Clifton Road Surgery</td><td>01788 552211</td><td>IHT 6 (PBT RUGBY NORTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Croft Medical Centre</td><td>01926 421153</td><td>IHT 8 SOUTH (PBT LEAMINGTON SOUTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Cubbington Surgery</td><td>01926 453080</td><td>IHT 8 NORTH (PBT LEAMINGTON NORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Dunchurch Surgery</td><td>01788 522448</td><td>IHT 5 (PBT RUGBY SOUTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Fenny Compton & Shenington</td><td>01295 678124</td><td>PBT SOUTHAM</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Harbury Surgery</td><td>01926 612232</td><td>PBT SOUTHAM</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Hastings House</td><td>01789 840245</td><td>IHT 11 (PBT SHIPSTON)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Hazelwood Group</td><td>01675 462176</td><td>IHT 1 (PBT ATHERSTONE)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Henley in Arden Medical Centre</td><td>01564 792434</td><td>IHT 10 (PBT ALCESTER)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Kineton Surgery</td><td>01926 640471</td><td>PBT SOUTHAM</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Lapworth Surgery</td><td>01564 783983</td><td>IHT 10 (PBT ALCESTER)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Leicester Road Surgery</td><td>024 7631 2288</td><td>IHT 4 (PBT BEDWORTH)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Little Thatch Surgery</td><td>01295 678124</td><td>PBT SOUTHAM</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Manor Court Surgery</td><td>024 7638 1999</td><td>IHT 2 (PBT CAMPHILL)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Market Quarter Medical Practice</td><td>01788 578800</td><td>IHT 6 (PBT RUGBY NORTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Meon Medical (Lower Quinton Surgery)</td><td>01789 720820</td><td>IHT 11 (PBT SHIPSTON)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Old Mill Surgery</td><td>024 7638 2554</td><td>IHT 3 (PBT MANOR)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Park Leys</td><td>02476332636</td><td>IHT 4 (PBT BEDWORTH)</td><td>This surgery is not covered for Macmillan, Matrons or Homefirst</td></tr>
+      <tr><td>Pear Tree</td><td>01827 872755</td><td>IHT 1 (PBT ATHERSTONE)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Polesworth & Dordon Surgery</td><td>01827 892893</td><td>IHT 1 (PBT ATHERSTONE)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Priory Medical Centre</td><td>01926 293711</td><td>IHT 7 (PBT WARWICK/KENILWORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Queens Road Surgery</td><td>024 7664 2368</td><td>IHT 3 (PBT MANOR)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Queensway</td><td>?</td><td>IHT 8 SOUTH (PBT LEAMINGTON SOUTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Red Roofs Surgery</td><td>024 7635 7100</td><td>IHT 3 (PBT MANOR)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Riversley Road Surgery</td><td>024 7638 2239</td><td>IHT 3 (PBT MANOR)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Rother House Surgery</td><td>01789 269386</td><td>IHT 9 (STRATFORD)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Satis House</td><td>01788 537531</td><td>IHT 1 (PBT ATHERSTONE)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Sherbourne Medical</td><td>01926 333500</td><td>IHT 8 NORTH (PBT LEAMINGTON NORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Shennington Surgery</td><td>01926 815842</td><td>PBT SOUTHAM</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Shipston Medical Centre</td><td>01608 661845</td><td>IHT 11 (PBT SHIPSTON)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Southam Surgery</td><td>01926 815842</td><td>PBT SOUTHAM</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Spa Medical Centre</td><td>01926 421214</td><td>IHT 8 SOUTH (PBT LEAMINGTON SOUTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Springhill Medical Centre</td><td>01676 540395</td><td>IHT 1 (PBT ATHERSTONE)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>St Wulfstan</td><td>01827 718631</td><td>PBT SOUTHAM</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Station Street Surgery</td><td>01827 718631</td><td>IHT 1 (PBT ATHERSTONE)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Stockingford Medical Centre</td><td>024 7638 6344</td><td>IHT 2 (PBT CAMPHILL)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Tamworth In Arden Medical Centre</td><td>01564 742274</td><td>IHT 10 (PBT ALCESTER)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>The Chaucer Surgery</td><td>024 7638 3784</td><td>IHT 3 (PBT MANOR)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>The Gables</td><td>024 7668 8340</td><td>IHT 4 (PBT BEDWORTH)</td><td>Not covered for Macmillan, Matrons or Homefirst</td></tr>
+      <tr><td>The Grange Medical Centre</td><td>024 7632 2810</td><td>IHT 2 (PBT CAMPHILL)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>The New Dispensary</td><td>01926 400010</td><td>IHT 7 (PBT WARWICK/KENILWORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>The Old Cole House</td><td>024 7631 1200</td><td>IHT 4 (PBT BEDWORTH)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>The Pool Med Centre</td><td>01527 853671</td><td>IHT 10 (PBT ALCESTER)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>The Revel Surgery</td><td>01788 834830</td><td>IHT 6 (PBT RUGBY NORTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>The Surgery Rugby Road</td><td>024 7664 3243</td><td>IHT 4 (PBT BEDWORTH)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Trinity Court Medical Centre</td><td>01789 292895</td><td>IHT 9 (STRATFORD)</td><td>STRATFORD HOMEFIRST</td></tr>
+      <tr><td>Trinity Court Medical Centre - Claverdon Patients</td><td>01926 400010</td><td>IHT 7 (PBT WARWICK/KENILWORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Tysoe Surgery</td><td>01295 680220</td><td>PBT SOUTHAM</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Warwick Gates  Family Health Centre</td><td>01926 461800</td><td>IHT 8 SOUTH (PBT LEAMINGTON SOUTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Waterside Medical Centre</td><td>01926 428321</td><td>IHT 8 NORTH (PBT LEAMINGTON NORTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Westside Medical Centre</td><td>01788 544744</td><td>IHT 6 (PBT RUGBY NORTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Whitehall Medical Centre</td><td>01788 542212</td><td>IHT 5 (PBT RUGBY SOUTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Whitestone Surgery</td><td>024 7664 1911</td><td>IHT 4 (PBT BEDWORTH)</td><td>HOMEFIRST NORTH</td></tr>
+      <tr><td>Whitnash Medical Centre</td><td>01926 316711</td><td>IHT 8 SOUTH (PBT LEAMINGTON SOUTH)</td><td>HOMEFIRST WARWICK</td></tr>
+      <tr><td>Wolston Surgery</td><td>024 7654 2192</td><td>IHT 6 (PBT RUGBY NORTH)</td><td>RUGBY HOMEFIRST</td></tr>
+      <tr><td>Woodlands Surgery</td><td>024 7649 0909</td><td>IHT 4 (PBT BEDWORTH)</td><td>HOMEFIRST NORTH</td></tr>
+  
+    </tbody>
+  </table>
+  
+  <!-- <p>Note that we start the search in tbody, to prevent filtering the table headers.</p> -->
+  </div>
   </body>
 </html>
 
 
-
-
-
-<!-- <div class="accordion" id="accordionExample">
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Wound Care</button>
-            </h2>
-          </div>
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body"> 
-              <ol>
-                <li>Where is the wound?</li>
-                <li>Does patient have spare dressings at home?</li>
-		<li>How often does it need to be attended to?</li>
-		<li>If clips need to be removed, does the patient have a removal kit?</li>
-		<li>Does the patient have a temporary dressing on the wound?</li>
-              </ol>
-
-    Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
