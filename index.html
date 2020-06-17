@@ -217,7 +217,7 @@
 
  <!-- TEXT ENTRY-->       
  <div class="form-group">
-  <textarea placeholder="Write notes here..." class="form-control" id="myInput" id="exampleFormControlTextarea1" rows="3" cols="1"></textarea>
+  <textarea type="text" class="form-control" id="myInput" id="exampleFormControlTextarea1" rows="3" cols="1" placeholder="..."></textarea>
 </div>
 <!-- COPY BUTTON --> 
 <button class="copy" onclick="myFunction()">Copy</button> 
@@ -228,12 +228,20 @@
     
     <!-- scripts --><div>
       <script>
-        function myFunction() {
-        var copyText = document.getElementById("myInput");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999)
-        document.execCommand("copy");
-        }       
+       function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("myInput");
+
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  /* Copy the text inside the text field */
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}  
       </script>
   
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
