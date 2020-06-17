@@ -68,6 +68,10 @@
     text-decoration: none;
 }
 
+.b {
+    font-weight: bold;
+}
+
 /* GP List CSS ---> */
 
 .back_button {
