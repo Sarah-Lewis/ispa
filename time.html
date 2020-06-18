@@ -9,25 +9,24 @@
    <body>  
     <p id="time"></p>
    
-     
+        <script> 
+          var today = new Date()
+              var curHr = today.getHours()
+
+              if (curHr < 12) {
+               document.write('Good morning' + " you're through to Community Health Services")
+              } else if (curHr < 18) {
+               document.write('Good afternoon' + " you're through to Community Health Services")
+              } else {
+                document.write('Good evening' + " you're through to Community Health Services")
+              }
+       </script> 
 
 
-</body>
+  </body>
 </html>
      
-    
-     <script> 
-        var today = new Date()
-            var curHr = today.getHours()
-
-            if (curHr < 12) {
-             document.write('Good morning' + " you're through to Community Health Services")
-            } else if (curHr < 18) {
-             document.write('Good afternoon' + " you're through to Community Health Services")
-            } else {
-              document.write('Good evening' + " you're through to Community Health Services")
-            }
-    </script> 
+ 
       
 <!--      
 <p id="p1">Hello World!</p>
@@ -70,12 +69,4 @@ for(var i = 0; i < data.length; i++){
         var hour = new Date().getHours();
 console.log("Good " + (hour<12 && "Morning" || hour<18 && "Afternoon" || "Evening"))
 
-
-
     </script> -->
- 
-
-
-</body>
-</html>
-
