@@ -47,6 +47,7 @@
 
 .GP_button {
     margin-bottom: 5px;
+    margin-top: 5px;
     border-radius: 4px;
     background-color: rgb(168, 209, 247);
     color: black;
