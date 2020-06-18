@@ -109,6 +109,7 @@ colour: pink;
     text-decoration: none;
 }
 
-table-hover {
+.table-hover {
     color: rgb(236, 247, 114);
+    background-color: rgb(236, 247, 114);
 }
