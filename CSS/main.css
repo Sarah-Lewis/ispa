@@ -16,13 +16,21 @@
     font-weight: bold;
 }
 
-.NHS:hover {
+.NHS:hover, .copy:hover {
     background-color:rgb(168, 209, 247);
 }
 
+.copy {
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: rgb(0 94 184);
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
 #myInput {
-   margin-top: 5px; 
-   margin-top: 5px; 
+   margin-top: 5px;  
 }
 
 .deff {
@@ -41,6 +49,7 @@
 .b {
     font-weight: bold;
 }
+
 
 /* GP List CSS */
 
@@ -81,19 +90,7 @@
         background-color: rgb(236, 247, 114);
 }
 
-.copy {
-    margin-top: 10px;
-    border-radius: 4px;
-    background-color: rgb(0 94 184);
-    color: white;
-    cursor: pointer;
-    transition-duration: 0.4s;
-}
 
-.copy:hover {
-    background-color: white;
-    color: rgb(0 94 184);
-} */
 
 /* .GP_button {
     margin-bottom: 5px;
