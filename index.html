@@ -11,13 +11,11 @@
   
   <body class="main-body">
     <h3>ISPA cheat sheet</h3>
-    <button type="button" class="GP_button"><a class="GP_link" href="GP-list/index.html">GP list &#8594</button></a>
-    <br>
-    
-    <!-- SEARCH BAR <input id="myInput" type="text" placeholder="Search..">
-    <div id="myDIV"> -->
     <!-- GP BUTTON --> 
-          
+    <button type="button" class="GP_button"><a class="GP_link" href="GP-list/index.html">GP list &#8594</button></a>
+    <br>   
+
+
       <div class="accordion" id="accordionExample">  
         <!-- 1. Catheter --> 
         <div class="card">
@@ -210,7 +208,10 @@
             </div>
         </div>
 
- <!-- TEXT ENTRY-->       
+ <!-- TEXT ENTRY-->     
+ <textarea id="content"></textarea>
+ <input type="button" id="copyID" value="Copy" />
+
  <div class="form-group">
   <input type="text" class="form-control" id="myInput" id="exampleFormControlTextarea1" rows="3" cols="1" placeholder="..."></textarea>
 </div>
@@ -223,21 +224,15 @@
     
     <!-- scripts -->
       <div>
-        <script>
-             function myFunction() {
-            /* Get the text field */
-            var copyText = document.getElementById("myInput");
-
-            /* Select the text field */
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
-            /* Copy the text inside the text field */
-            document.execCommand("copy");
-
-            /* Alert the copied text */
-            alert("Copied the text: " + copyText.value);
-          }  
+        <script type="text/javascript">
+          var button = document.getElementById("copyID"),
+              input = document.getElementById("content");
+  
+          button.addEventListener("click", function(event) {
+              event.preventDefault();
+              input.select();
+              document.execCommand("copy");
+          });
       </script>
   
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -268,5 +263,9 @@ urgent nursing in the south - refer to community matron
 -->
 
 
-
+<!-- SEARCH BAR <input id="myInput" type="text" placeholder="Search..">
+    <div id="myDIV"> -->
  
+ 
+    
+   

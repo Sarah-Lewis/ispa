@@ -1,12 +1,8 @@
-/* ISPA Sheet CSS ---> */
+/* ISPA Sheet CSS */
 
-.main-body { 
+.main-body, .gp_body { 
     margin-left: 5px;
     margin-top: 5px;
-}
-
-.GP_button {
-
 }
 
 .NHS { 
@@ -39,7 +35,7 @@
     font-weight: bold;
 }
 
-/* GP List CSS ---> */
+/* GP List CSS */
 
 .back_button, .GP_button {
     margin-bottom: 10px;

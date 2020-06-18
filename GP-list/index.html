@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://sarah-lewis.github.io/ispa/CSS/main.css">
   </head>
 
-  <body>
+  <body class="gp_body">
     <div class="container">
       <h2>GP List</h2>
       
@@ -16,9 +16,8 @@
       <div id="back"> 
         <button type="button" class="back_button"><a class="back_link" href="https://sarah-lewis.github.io/ispa/index.html">&#8592 Back</button></a>
       </div> 
-
-      
-      <!-- Search Function -->
+ 
+      <!-- Search Function (Note that we start the search in tbody, to prevent filtering the table headers) -->
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..">
       
       <br>
@@ -34,7 +33,7 @@
           </tr>
         </thead>
         
-<!-- Table Body -->
+        <!-- Table Body -->
         <tbody id="myTable">
           <tr><td>Abbey Medical Centre</td><td>01926859955</td><td>IHT 7 (PBT WARWICK/KENILWORTH)</td><td>HOMEFIRST WARWICK</td></tr>
           <tr><td>Alcester Health Centre</td><td>01789763060</td><td>IHT 10 (PBT ALCESTER)</td><td>STRATFORD HOMEFIRST</td></tr>
@@ -118,32 +117,33 @@
           <tr><td>Woodlands Surgery</td><td>02476490909</td><td>IHT 4 (PBT BEDWORTH)</td><td>HOMEFIRST NORTH</td></tr>
         </tbody>
       </table>
-      <!-- Note that we start the search in tbody, to prevent filtering the table headers -->
     </div>
-   
-    <script>
-      function myFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
-}
+
+
+    <!-- search function javascript -->
+    <script> 
+        function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
     </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+
   </body>
 </html>
-
