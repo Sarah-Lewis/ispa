@@ -7,10 +7,25 @@
   </head>
   
     <body>
+      
+      
+      
       <script>
-        <!---test one --->
+    // test one 
     
-var data = [
+            var today = new Date()
+            var curHr = today.getHours()
+
+            if (curHr < 12) {
+             document.write('good morning')
+            } else if (curHr < 18) {
+             document.write('good afternoon')
+            } else {
+              document.write('good evening')
+            }
+// test two 
+
+        var data = [
     [0, 4, "Good night"], 
     [5, 11, "Good morning"],          //Store messages in an array
     [12, 17, "Good afternoon"],
@@ -20,13 +35,9 @@ var data = [
 
 for(var i = 0; i < data.length; i++){
     if(hr >= data[i][0] && hr <= data[i][1]){
-        document.write(data[i][2]);
+        console.log(data[i][2]);
     }
 }
-
-<!-- TEST TWO -->
-
-
 
 
 
