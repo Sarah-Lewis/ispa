@@ -6,7 +6,7 @@
 }
 
 .GP_button {
-    position: static;
+
 }
 
 .NHS { 
@@ -24,20 +24,6 @@
     background-color:rgb(168, 209, 247);
 }
 
-/* .copy {
-    margin-top: 10px;
-    border-radius: 4px;
-    background-color: rgb(0 94 184);
-    color: white;
-    cursor: pointer;
-    transition-duration: 0.4s;
-}
-
-.copy:hover {
-    background-color: white;
-    color: rgb(0 94 184);
-} */
-
 #myInput {
    margin-top: 5px; 
    margin-top: 5px; 
@@ -48,31 +34,6 @@
     font-size: smaller;
     color: grey;
 }
-
-
-/* .GP_button {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border-radius: 4px;
-    background-color: rgb(168, 209, 247);
-    color: black;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.GP_button:hover {
-    background-color:rgb(98, 179, 252);
-    color: black;
-    text-decoration: none;
-}
-
-.GP_link:visited, .GP_link:active {
-    background-color:rgb(168, 209, 247);
-    color: black;
-    text-decoration: none;
-} */
 
 .b {
     font-weight: bold;
@@ -116,3 +77,41 @@
 .table tbody tr:hover td, .table tbody tr:hover th {
         background-color: rgb(236, 247, 114);
 }
+
+/* .copy {
+    margin-top: 10px;
+    border-radius: 4px;
+    background-color: rgb(0 94 184);
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.copy:hover {
+    background-color: white;
+    color: rgb(0 94 184);
+} */
+
+/* .GP_button {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: rgb(168, 209, 247);
+    color: black;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.GP_button:hover {
+    background-color:rgb(98, 179, 252);
+    color: black;
+    text-decoration: none;
+}
+
+.GP_link:visited, .GP_link:active {
+    background-color:rgb(168, 209, 247);
+    color: black;
+    text-decoration: none;
+} */
