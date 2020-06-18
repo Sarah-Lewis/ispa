@@ -226,22 +226,35 @@
       </div>
     </div>
     
-    <!-- scripts --><div>
-      <script>
-       function myFunction() {
-  /* Get the text field */
-  var copyText = document.getElementById("myInput");
+    <!-- scripts -->
+      <div>
+        <script>
+            var today = new Date()
+            var curHr = today.getHours()
 
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+            if (curHr < 12) {
+             document.write('Good morning' + " you're through to Community Health Services")
+            } else if (curHr < 18) {
+             document.write('Good afternoon' + " you're through to Community Health Services")
+            } else {
+              document.write('Good evening' + " you're through to Community Health Services")
+            }
+          
+          
+             function myFunction() {
+            /* Get the text field */
+            var copyText = document.getElementById("myInput");
 
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); /*For mobile devices*/
 
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
-}  
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+
+            /* Alert the copied text */
+            alert("Copied the text: " + copyText.value);
+          }  
       </script>
   
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
