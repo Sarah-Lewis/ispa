@@ -32,6 +32,12 @@
     white-space: pre;
 }
 
+.DeffNoSpace {
+    font-style: italic;
+    font-size: smaller;
+    color: grey;
+}
+
 .b {
     font-weight: bold;
 }
