@@ -6,15 +6,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://raw.githubusercontent.com/Sarah-Lewis/ispa/master/CSS/main.css?token=APGSYKY7U4R4V4FJXYA7AWC66JXS6"> 
     <link rel="stylesheet" href="https://sarah-lewis.github.io/ispa/CSS/main.css">
-
-
-    <!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/Sarah-Lewis/ispa/master/CSS/main.css?token=APGSYKY7U4R4V4FJXYA7AWC66JXS6">
-    <link rel="stylesheet" href="https://sarah-lewis.github.io/ispa/CSS/main.css"> -->
-   
     <title>ISPA</title>
   </head>
   
   <body class="main-body">
+    <script> 
+      var today = new Date()
+            var curHr = today.getHours()
+
+            if (curHr < 12) {
+             document.write('Good morning' + " you're through to Community Health Services")
+            } else if (curHr < 18) {
+             document.write('Good afternoon' + " you're through to Community Health Services")
+            } else {
+              document.write('Good evening' + " you're through to Community Health Services")
+            }
+    </script> 
     <h3>ISPA cheat sheet</h3>
 
     <!-- SEARCH BAR --> <input id="myInput" type="text" placeholder="Search..">
@@ -229,18 +236,6 @@
     <!-- scripts -->
       <div>
         <script>
-            var today = new Date()
-            var curHr = today.getHours()
-
-            if (curHr < 12) {
-             document.write('Good morning' + " you're through to Community Health Services")
-            } else if (curHr < 18) {
-             document.write('Good afternoon' + " you're through to Community Health Services")
-            } else {
-              document.write('Good evening' + " you're through to Community Health Services")
-            }
-          
-          
              function myFunction() {
             /* Get the text field */
             var copyText = document.getElementById("myInput");
@@ -274,5 +269,7 @@
 - A nephrostomy is a tube that drains urine from the kidney if there is a blockage in the urinary system.
   
 -->
+
+
 
  
