@@ -46,7 +46,7 @@
 }
 
 .GP_button {
-    float: left;
+    position: static;
 }
 
 /* .GP_button {
