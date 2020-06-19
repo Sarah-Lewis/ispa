@@ -1,5 +1,11 @@
 /* ISPA Sheet CSS */
 
+#hello {
+    color: grey;
+    font-style: italic;
+    font-size: smaller;
+}
+
 .main-body, .gp_body { 
     margin-left: 5px;
     margin-top: 5px;
