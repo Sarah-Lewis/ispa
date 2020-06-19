@@ -3,6 +3,7 @@
 #hello {
     color: grey;
     font-style: italic;
+    white-space: normal;
 }
 
 .main-body, .gp_body { 
