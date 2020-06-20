@@ -11,6 +11,10 @@
     margin-top: 5px;
 }
 
+.GP_button {
+top: 10%    
+}
+
 .NHS, .copy { 
     margin-bottom: 10px;
     border-radius: 4px;
