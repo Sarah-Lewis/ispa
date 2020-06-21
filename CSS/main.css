@@ -12,7 +12,6 @@
 }
 
 .btn1, .btn1:visited, .btn1:active, .lnk, .lnk:active, .lnk:visited { 
-    margin-bottom: 10px;
     border-radius: 4px;
     background-color:white;
     color: royalblue;
@@ -26,6 +25,10 @@
 .btn1:hover {
     background-color:rgb(171, 211, 245);
     text-decoration: none;
+}
+
+.accordion {
+    margin-top: 10px;
 }
 
 #myInput {
