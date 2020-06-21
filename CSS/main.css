@@ -52,7 +52,7 @@
     font-weight: bold;
 }
 
-textarea {
+#content {
     margin-top: 20px;
 }
 
@@ -67,10 +67,6 @@ textarea {
     transition-duration: 0.4s;
     font-weight: bold;
     text-decoration: none;
-}
-
-.back_button {
-
 }
 
 .back_button:hover, .GP_button:hover {
@@ -92,7 +88,7 @@ textarea {
 }
 
 .table tbody tr:hover td, .table tbody tr:hover th { 
-        background-color: rgb(236, 247, 114); 
+    background-color: rgb(236, 247, 114); 
 }
 
 
