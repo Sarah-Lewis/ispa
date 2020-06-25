@@ -58,6 +58,10 @@
 
 /* GP List CSS */
 
+#gpBody {
+    margin-left: 5px;
+    margin-top: 5px;
+    
 .back_button, .GP_button {
     margin-bottom: 10px;
     border-radius: 4px;
@@ -89,7 +93,6 @@
 
 .table tbody tr:hover td, .table tbody tr:hover th { 
     background-color: rgb(236, 247, 114); 
- 
 }
 
 .inline {
@@ -100,16 +103,14 @@
 }
 
 .back_button {
- margin-left: 100px;   
+ margin-left: 10px;   
 }
 
 #refresh {
     margin-right: 100px;
 }
 
-#gpBody {
-    margin-left: 5px;
-    margin-top: 5px;
+
 }
 
 /* */  
