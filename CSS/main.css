@@ -97,6 +97,10 @@
     position: absolute;
 }
 
+.back_button {
+ margin-left: 5px;   
+}
+
 /* */  
 
 /* .GP_button {
