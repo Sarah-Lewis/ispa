@@ -98,16 +98,16 @@
 }
 
 .back_button {
- margin-left: 50px;   
-}
-
-#myTable {
-    margin-left: 5px;
-    margin-top: 5px;
+ margin-left: 100px;   
 }
 
 #refresh {
-margin-right: 50px;
+    margin-right: 100px;
+}
+
+#gpBody {
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 /* */  
