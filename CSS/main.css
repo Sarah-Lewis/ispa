@@ -48,9 +48,10 @@
     font-weight: bold;
 }
 
-#content {
+#content { /*textarea box */ 
     margin-top: 20px;
 }
+
 
 /* GP List CSS */
 
@@ -100,9 +101,11 @@
     margin-right: 50px;
 }
 
-#myInput {        
+    #myInput {        
     margin-top: 10px;
 }
+
+
 
 /* */  
 
