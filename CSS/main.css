@@ -91,7 +91,7 @@
     background-color: rgb(236, 247, 114); 
 }
 
-#back-button, #refresh {
+.inline {
     display:inline-block;
 }
 
