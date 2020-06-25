@@ -90,6 +90,7 @@
 .table tbody tr:hover td, .table tbody tr:hover th { 
     background-color: rgb(236, 247, 114); 
     margin-left: 5px;
+    margin-top: 5px;
 }
 
 .inline {
@@ -98,7 +99,7 @@
 }
 
 .back_button {
- margin-left: 5px;   
+ margin-left: 10px;   
 }
 
 /* */  
