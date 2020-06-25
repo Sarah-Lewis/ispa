@@ -14,10 +14,10 @@
       
       <!-- Back button -->
       <div id="back"> 
-        <button type="button" class="back_button"><a class="back_link" href="https://sarah-lewis.github.io/ispa/index.html">&#8592 Back</button></a>
+        <button type="button" class="back_button" id="back-button" ><a class="back_link" href="https://sarah-lewis.github.io/ispa/index.html">&#8592 Back</button></a>
       </div> 
        <!-- Refresh Button -->
-    <button type="submit" class="btn1" onClick="refreshPage()">&#8634</button>
+    <button type="submit" class="btn1" id="refresh" onClick="refreshPage()">&#8634</button>
  
       <!-- Search Function (Note that we start the search in tbody, to prevent filtering the table headers) -->
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..">
@@ -142,6 +142,11 @@
             }       
           }
         }
+  
+          function refreshPage(){
+            window.location.reload();
+        } 
+      
     </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
