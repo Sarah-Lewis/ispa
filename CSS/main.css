@@ -92,7 +92,8 @@
 }
 
 .inline {
-    display:inline-block;
+    display: inline-block;
+    position: absolute;
 }
 
 /* */  
