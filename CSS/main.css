@@ -55,6 +55,10 @@
 
 /* GP List CSS */
 
+h2 {
+    color: pink;
+}
+
 #gpBody {
     margin-top: -10px;
 }
