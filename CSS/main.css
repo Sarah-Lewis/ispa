@@ -59,11 +59,6 @@
     margin-top: -10px;
 }
 
-.back_link:visited, .GP_link:visited, .back_link:active, .GP_link:active {
-    background-color: rgb(98, 179, 252);
-    text-decoration: none;
-}
-
 .table tbody tr:hover td, .table tbody tr:hover th { /* hover colour */  
     background-color: rgb(236, 247, 114); 
 }
