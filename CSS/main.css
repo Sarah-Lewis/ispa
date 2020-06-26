@@ -53,7 +53,6 @@
     margin-top: 20px;
 }
 
-
 /* GP List CSS */
 
 #gpBody {
@@ -71,20 +70,21 @@
     background-color: rgb(236, 247, 114); 
 }
 
+
+#myInput {  /* search box */    
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 .inline { /* two buttons */  
     display: inline-block;
     position: absolute;
 }
 
-#myInput {  /* search box */    
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .back {
     margin-left: 50px;
 }
-
+  
+  
 /* */  
 
 /* .GP_button {
