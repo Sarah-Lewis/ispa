@@ -60,8 +60,7 @@
 }
 
 .back_link:visited, .GP_link:visited, .back_link:active, .GP_link:active {
-    background-color:rgb(98, 179, 252);
-    color: black;
+    background-color: rgb(98, 179, 252);
     text-decoration: none;
 }
 
