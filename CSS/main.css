@@ -73,7 +73,7 @@
 
 .inline {
     display: inline-block;
-    position: absolute;
+   /*  position: absolute; */ 
     margin-bottom: 50px;
 }
 
