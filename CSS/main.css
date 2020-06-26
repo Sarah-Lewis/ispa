@@ -23,8 +23,8 @@
 }
 
 .button:hover, .lnk:hover {
-    background-color: white;
-    color: royalblue;
+    background-color: royalblue;
+    color: white;
     text-decoration: none;
 }
 
