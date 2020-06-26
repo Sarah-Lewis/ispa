@@ -53,12 +53,11 @@
     margin-top: 20px;
 }
 
-
 /* GP List CSS */
 
 #gpBody {
-    margin-left: 5px;
-    margin-top: 5px;
+    margin-left: -100px;
+    margin-top: -10px;
 }
 
 .back_link:visited, .GP_link:visited, .back_link:active, .GP_link:active {
@@ -67,31 +66,25 @@
     text-decoration: none;
 }
 
-.table tbody tr:hover td, .table tbody tr:hover th { 
+.table tbody tr:hover td, .table tbody tr:hover th { /* hover colour */  
     background-color: rgb(236, 247, 114); 
 }
 
-.inline {
-    display: inline-block;
-   /*  position: absolute; */ 
-    margin-bottom: 50px;
-}
-
-.back_button {
- margin-left: 500px;   
-}
-
-#refresh {
-    margin-right: 50px;
-}
 
 #myInput {  /* search box */    
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+.inline { /* two buttons */  
+    display: inline-block;
+    position: absolute;
 }
 
-
-
+.back {
+    margin-left: 50px;
+}
+  
+  
 /* */  
 
 /* .GP_button {
