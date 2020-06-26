@@ -22,8 +22,9 @@
     display: inline-block;
 }
 
-.button:hover {
-    background-color:rgb(171, 211, 245);
+.button:hover, .lnk:hover {
+    background-color:rgb(98, 179, 252);
+    color: black;
     text-decoration: none;
 }
 
@@ -38,7 +39,7 @@
     white-space: pre-line;
 }
 
-.NoSpace {
+.NoSpace { /* text in Macmillan section */
     font-style: italic;
     font-size: smaller;
     color: grey;
@@ -58,22 +59,6 @@
 #gpBody {
     margin-left: 5px;
     margin-top: 5px;
-    
-.button {
-    margin-bottom: 10px;
-    border-radius: 4px;
-    background-color: rgb(168, 209, 247);
-    color: black;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.button:hover {
-    background-color:rgb(98, 179, 252);
-    color: black;
-    text-decoration: none;
 }
 
 .back_link:visited, .GP_link:visited, .back_link:active, .GP_link:active {
@@ -101,7 +86,7 @@
     margin-right: 50px;
 }
 
-    #myInput {        
+#myInput {  /* search box */    
     margin-top: 10px;
 }
 
