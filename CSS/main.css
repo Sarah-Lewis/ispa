@@ -70,10 +70,10 @@
     background-color: rgb(236, 247, 114); 
 }
 
-
 #myInput {  /* search box */    
     margin-top: 10px;
     margin-bottom: 10px;
+}
 
 .inline { /* two buttons */  
     display: inline-block;
