@@ -23,8 +23,8 @@
 }
 
 .button:hover, .lnk:hover {
-    background-color:rgb(98, 179, 252);
-    color: black;
+    background-color: white;
+    color: royalblue;
     text-decoration: none;
 }
 
