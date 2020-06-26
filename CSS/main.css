@@ -1,7 +1,7 @@
 /* ISPA Sheet CSS */
 
-.main-body, .gp_body { 
-    margin-left: 500px;
+.main-body { 
+    margin-left: 5px;
     margin-top: 5px;
 }
 
@@ -11,7 +11,7 @@
     white-space: normal;
 }
 
-.btn1, .btn1:visited, .btn1:active, .lnk, .lnk:active, .lnk:visited { 
+.button, .button:visited, .button:active, .lnk, .lnk:active, .lnk:visited {
     border-radius: 4px;
     background-color:white;
     color: royalblue;
@@ -22,17 +22,14 @@
     display: inline-block;
 }
 
-.btn1:hover {
-    background-color:rgb(171, 211, 245);
+.button:hover, .lnk:hover {
+    background-color:rgb(98, 179, 252);
+    color: black;
     text-decoration: none;
 }
 
 .accordion {
     margin-top: 10px;
-}
-
-#myInput {
-   margin-top: 5px;  
 }
 
 .deff { /* dictionary definitions */
@@ -42,7 +39,7 @@
     white-space: pre-line;
 }
 
-.NoSpace {
+.NoSpace { /* text in Macmillan section */
     font-style: italic;
     font-size: smaller;
     color: grey;
@@ -52,49 +49,45 @@
     font-weight: bold;
 }
 
-textarea {
+#content { /*textarea box */ 
     margin-top: 20px;
 }
 
+
 /* GP List CSS */
 
-.back_button, .GP_button {
+h2 {
+    color: pink;
+}
+
+#gpBody {
+    margin-left: -100px;
+    margin-top: -10px;
+}
+
+.back_link:visited, .GP_link:visited, .back_link:active, .GP_link:active {
+    background-color:rgb(98, 179, 252);
+    color: black;
+    text-decoration: none;
+}
+
+.table tbody tr:hover td, .table tbody tr:hover th { /* hover colour */  
+    background-color: rgb(236, 247, 114); 
+}
+
+.inline { /* two buttons */  
+    display: inline-block;
+    position: absolute;
+}
+
+#myInput {  /* search box */    
+    margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 4px;
-    background-color: rgb(168, 209, 247);
-    color: black;
-    cursor: pointer;
-    transition-duration: 0.4s;
-    font-weight: bold;
-    text-decoration: none;
 }
 
-.back_button {
-    float: right;
+.back {
+    margin-left: 50px;
 }
-
-.back_button:hover, .GP_button:hover {
-    background-color:rgb(98, 179, 252);
-    color: black;
-    text-decoration: none;
-}
-
-.back_link:visited, .GP_link:visited {
-    background-color:rgb(98, 179, 252);
-    color: black;
-    text-decoration: none;
-}
-
-.back_link:active, .GP_link:active {
-    background-color:rgb(98, 179, 252);
-    color: black;
-    text-decoration: none;
-}
-
-.table tbody tr:hover td, .table tbody tr:hover th { 
-        background-color: rgb(236, 247, 114); 
-}
-
 
 /* */  
 
@@ -119,5 +112,17 @@ textarea {
     transition-duration: 0.4s;
 }
 
+    .btn1, .btn1:visited, .btn1:active, .lnk, .lnk:active, .lnk:visited { 
+    border-radius: 4px;
+    background-color:white;
+    color: royalblue;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+
+- need to get buttons sorted out on GP page
+- get rid of page margin that is too big
 
 */

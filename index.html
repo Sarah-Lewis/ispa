@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://sarah-lewis.github.io/ispa/CSS/main.css">
+    <link rel="stylesheet" href="/Users/lewis_sarah1/Desktop/ispa-branch-one/CSS/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://raw.githubusercontent.com/Sarah-Lewis/ispa/master/CSS/main.css?token=APGSYKY7U4R4V4FJXYA7AWC66JXS6"> 
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="https://sarah-lewis.github.io/ispa/CSS/main.css">
     <title>ISPA</title>
   </head>
   
@@ -25,13 +25,11 @@
               document.write(' evening ')
             }
       </script> 
-     you're through to Community Health Services..."
+     you're through to Community Health Services (name) speaking how can I help?"
     </span></h5>
 
-    <button type="submit" class="btn1" onClick="refreshPage()">&#8634</button>
-
     <!-- GP BUTTON --> 
-    <button type="button" class="btn1"><a class="lnk" href="GP-list/index.html">GP list &#8594</button></a>
+    <button type="button" class="button"><a class="lnk" href="GP-list/index.html">GP list &#8594</button></a>
     <br>   
 
 
@@ -53,7 +51,7 @@
                     <li>Do you have spare equipment at home?</li>
                   </ol>   
                   <!-- NHS BUTTON --> 
-                    <button type="button" id="NHS" class="NHS"><a href="https://www.nhs.uk/conditions/urinary-catheters/" target="_blank">NHS</button></a>
+                    <button type="button" class="button"><a href="https://www.nhs.uk/conditions/urinary-catheters/" target="_blank">NHS</button></a>
                  
                 </div>
               </div>
@@ -171,6 +169,33 @@
             </div>
         </div>
         
+     <!-- 7. New Referrals -->
+        <div class="card">
+          <div class="card-header" id="headingSeven">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              New referrals
+              </button>
+            </h2>
+          </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+	          <table class="table table-bordered table-striped">
+		        <thead><tr>
+		      	<th>Service</th>
+            <th>Referral Target</th>
+            <th>Clinical Term</th>
+              </tr></thead>
+                <tbody>
+			<tr><td>HomeFirst</td><td> SWFT_HomeFirst <span class="deff">(and location)</span></td><td>Referral to community-based nurse</td></tr>
+                  <tr><td>Physio</td><td>SWFT_ISPA Care Coordination Planned Therapy </td><td>Refer to community physiotherapist</td></tr>
+                  <tr><td>OT</td><td>SWFT_ISPA Care Coordination Planned Therapy </td><td>Referral to community-based occupational therapy service</td></tr>
+		  <tr><td>Nurses</td><td><span class="deff">(specific IHT/PBT team)</span></td><td>Refer to district nurse</td></tr>
+                </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+    
         <!-- 9. Dictionary -->
         <div class="card">
           <div class="card-header" id="headingNine">
@@ -193,8 +218,9 @@
                   <li>Glaucoma<span class="deff">   A common eye condition - optic nerve becomes damaged caused by fluid building up in the eye. Can lead to loss of vision if not diagnosed/treated early, most common in adults aged 70+</span>
                   <li>Haematoma<span class="deff">   Localised bleeding outside of blood vessels due to either disease or trauma</span>
                   <li>Nasogastric tube<span class="deff">   Plastic tube inserted via the nose and into the stomach</span>
+                  <li>Neuropathy<span class="deff"></span>
                   <li>Nephrostomy tube<span class="deff">   Drains urine from the kidney if there is a blockage in the urinary system</span>
-                  <li>Oesophageal/oesophagus<span class="deff">The 'food pipe'</span>    
+                  <li>Oesophageal/oesophagus<span class="deff"> The 'food pipe'</span>    
                   <li>Oramorph<span class="deff">   Liquid morphine</span>
                   <li>Palliative<span class="deff">   Care provided in last 1-2 years of life</span>
                   <li>Podiatry<span class="deff">   Feet</span>
@@ -217,27 +243,31 @@
             <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
               <div class="card-body"> 
                 <ul>
-                  <li>Address: Leamington Spa Hospital, Heathcote Lane, Heathcote, Warwick, Warwickshire CV34 6SR</li>
-                  <li>iSPA: 01926 600 818</li>
-                  <li>iSPA email: ispa@SWFT.nhs.uk</li>
-                  <li>Netbox email: swg-tr.warwickispa@nhs.net</li>
-                  <li>iSPA Fax: 01926 317 728</li>
-                  <li>ICC mobile: 07468340356</li>
-                  <li>Millbrook: 0333 3218986</li>
-                  <li>Warwick Hospital: 01926 495321</li>
-                  <li>University Hospitals Coventry and Warwickshire</li>
+                  <li><span class="b">Address:</span> Leamington Spa Hospital, Heathcote Lane, Heathcote, Warwick, Warwickshire CV34 6SR</li>
+		  <li><span class="b">iSPA phone:</span> 01926 600 818</li>
+                  <li><span class="b">iSPA mobile:</span> 075902287469</li>
+		  <li><span class="b">iSPA email:</span> ispa@SWFT.nhs.uk</li>
+                  <li><span class="b">Netbox email:</span> swg-tr.warwickispa@nhs.net</li>
+                  <li><span class="b">iSPA Fax:</span> 01926 317 728</li>
+                  <li><span class="b">ICC mobile:</span> 07468340356</li>
+                  <li><span class="b">Millbrook:</span> 0333 3218986</li>
+                  <li><span class="b">Warwick Hospital:</span> 01926 495321</li>
+                  <li><span class="b">University Hospitals Coventry and Warwickshire:</span> 024 76964000</li>
                 </ul>
               </div>
             </div>
         </div>
       </div>
 
-    <!-- text entry & copy-->     
-    <textarea id="content" rows="4" cols="55" placeholder="Enter notes here...."></textarea>
-    <input type="button" class="btn1" id="copyID" value="Copy" />
+    <!-- text entry-->     
+    <textarea id="content" rows="7" cols="55" placeholder="Enter notes here...."></textarea>
+    <!-- copy button -->
+    <input type="button" class="button" id="copyID" value="Copy" />
+    <!-- Refresh Button -->
+    <button type="submit" class="button" onClick="refreshPage()">&#8634</button>
     </div>
     </div>
-    
+
     <!-- scripts -->
     <div>
         <script type="text/javascript">
@@ -262,8 +292,6 @@
     </div>
   </body>
 </html>
-
-
 
 <!-- NOTES / UPDATES / THINGS TO CHANGE 
 
