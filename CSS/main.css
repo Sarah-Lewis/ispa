@@ -55,33 +55,22 @@
 
 /* GP List CSS */
 
-h4 {
-    color:red;
-}
-
 #gpBody {
     margin-top: -10px;
     margin-left: -10px;
+}
+
+.table {
+    font-size: small;
 }
 
 .table tbody tr:hover td, .table tbody tr:hover th { /* hover colour */  
     background-color: rgb(236, 247, 114); 
 }
 
-#myInput {  /* search box */    
-    margin-top: 10px;
-    margin-bottom: 10px;
+#phone {
+    text-align: center;
 }
-
-.inline { /* two buttons */  
-    display: inline-block;
-    position: absolute;
-}
-
-.back {
-    margin-left: 30px;
-}
-  
   
 /* */  
 
