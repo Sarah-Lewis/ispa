@@ -60,9 +60,9 @@
     margin-left: -10px;
 }
 
-.table {
+/* .table {
     font-size: small;
-}
+} */
 
 .table tbody tr:hover td, .table tbody tr:hover th { /* hover colour */  
     background-color: rgb(236, 247, 114); 
