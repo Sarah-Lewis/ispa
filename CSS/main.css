@@ -58,11 +58,10 @@
 #gpBody {
     margin-top: -10px;
     margin-left: -10px;
-    font-size: smaller;
 }
 
 .table {
-    font-size: smaller;
+    font-size: small;
 }
 
 .table tbody tr:hover td, .table tbody tr:hover th { /* hover colour */  
