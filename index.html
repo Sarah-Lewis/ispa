@@ -3,15 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/Sarah-Lewis/ispa/master/CSS/main.css">
     <link rel="stylesheet" href="https://sarah-lewis.github.io/ispa/CSS/main.css">
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/Sarah-Lewis/ispa/master/CSS/main.css?token=APGSYKY7U4R4V4FJXYA7AWC66JXS6"> 
     <title>ISPA</title>
   </head>
   
   <body class="main-body">
-    <h4>ISPA cheat sheet</h4>
+    <nav class="navbar navbar-expand navbar-light bg-light navbar-expand">  
+       <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> <!-- navbar-collapse -->
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://sarah-lewis.github.io/ispa/index.html">ISPA info<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://sarah-lewis.github.io/ispa/GP-list/index.html">GP List</a>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+          <!--<button class="button btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        </form>
+      </div>
+    </nav>
+
     <h5><span id="hello">"Good
       <script> 
         document.getElementById("time")
@@ -25,13 +40,8 @@
               document.write(' evening ')
             }
       </script> 
-     you're through to Community Health Services (name) speaking how can I help?"
+     you're through to Community Health Services (name) speaking, how can I help?"
     </span></h5>
-
-    <!-- GP BUTTON --> 
-    <button type="button" class="button"><a class="lnk" href="GP-list/index.html">GP list &#8594</button></a>
-    <br>   
-
 
       <div class="accordion" id="accordionExample">  
         <!-- 1. Catheter --> 
@@ -223,7 +233,7 @@
                   <li>Oesophageal/oesophagus<span class="deff"> The 'food pipe'</span>    
                   <li>Oramorph<span class="deff">   Liquid morphine</span>
                   <li>Palliative<span class="deff">   Care provided in last 1-2 years of life</span>
-                  <li>Podiatry<span class="deff">   Feet</span>
+                  <li>Podiatry<span class="deff">   Feet - DNs don't do this, patients will need to speak to their GP or a private podiatrist</span>
                   <li>Tinzaparin<span class="deff">   Anticoagulant injected into stomach, usually administered in evening</span>
                   <li>Syringe driver<span class="deff">   Battery-powered pump that delivers medication at a constant rate through a small tube under the skin</span>
                 </ul>
@@ -268,8 +278,8 @@
     </div>
     </div>
 
-    <!-- scripts -->
-    <div>
+   
+    <div><!-- scripts -->
         <script type="text/javascript">
           var button = document.getElementById("copyID"),
               input = document.getElementById("content");
@@ -283,13 +293,14 @@
           function refreshPage(){
             window.location.reload();
         } 
-
       </script>
+
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </div>
+  
   </body>
 </html>
 
