@@ -1,5 +1,5 @@
 /* ISPA Sheet CSS */
-.nav-link .nav-link:active .nav-link:visited {
+.nav-link, .nav-link:active, .nav-link:visited, .sr-only {
 color: blue;
 }
 
