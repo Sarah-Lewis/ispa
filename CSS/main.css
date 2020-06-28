@@ -1,4 +1,5 @@
 /* ISPA Sheet CSS */
+
 .nav-link, .nav-link:active, .nav-link:visited, .sr-only {
 color: blue;
 }
@@ -6,10 +7,6 @@ color: blue;
 .refresh {
    cursor: pointer;
 }
-
-/* body :not(.navbar) {
-   margin-left: 5px;
-} */
 
   .main-body {  
     margin-top: -10px;
@@ -19,6 +16,7 @@ color: blue;
     color: grey;
     font-style: italic;
     white-space: normal;
+    margin-left: 5px;
 }
 
 .button, .button:visited, .button:active, .lnk, .lnk:active, .lnk:visited {
@@ -40,6 +38,7 @@ color: blue;
 
 .accordion {
     margin-top: 10px;
+    margin-left: 2px;
 }
 
 .deff { /* dictionary definitions */
