@@ -3,10 +3,10 @@
 color: blue;
 }
 
-.main-body { 
-    margin-left: 5px;
-    margin-top: 5px;
-}
+/*  .main-body {  
+     margin-left: 5px; 
+     margin-top: 5px; 
+} */
 
 #hello { /* intro statement */
     color: grey;
