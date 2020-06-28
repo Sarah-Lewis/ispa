@@ -1,7 +1,8 @@
 /* ISPA Sheet CSS */
-.nav-link {
+.nav-link .nav-link:active .nav-link:visited {
 color: blue;
 }
+
 .main-body { 
     margin-left: 5px;
     margin-top: 5px;
