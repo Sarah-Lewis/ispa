@@ -7,9 +7,12 @@ color: blue;
    cursor: pointer;
 }
 
+:not(.navbar) {
+   margin-left: 5px;
+}
+
   .main-body {  
     margin-top: -10px;
-    margin-left: 15px;
 } 
 
 #hello { /* intro statement */
