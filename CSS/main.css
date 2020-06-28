@@ -7,9 +7,9 @@ color: blue;
    cursor: pointer;
 }
 
-body :not(.navbar) {
+/* body :not(.navbar) {
    margin-left: 5px;
-}
+} */
 
   .main-body {  
     margin-top: -10px;
