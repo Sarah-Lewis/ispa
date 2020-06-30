@@ -25,7 +25,7 @@
             <span class="nav-link refresh" onClick="refreshPage()">Refresh &#8635</span>
           </li>
         </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <form class="form-inline my-2 my-lg-0"> <!-- search function -->
             <input class="form-control mr-sm-2" id="myInput" onkeyup="myFunction()" type="search" placeholder="Search">
           </form>
       </div>
@@ -298,6 +298,26 @@
           function refreshPage(){
             window.location.reload();
         } 
+	
+		    function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("main-body");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+    txtValue = td.textContent || td.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+		
       </script>
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
