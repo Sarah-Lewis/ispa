@@ -64,6 +64,10 @@ color: blue;
   
 }
 
+.g { /*green text */ 
+   color: green;
+}
+
 /* GP List CSS */
 
 #gpBody {
