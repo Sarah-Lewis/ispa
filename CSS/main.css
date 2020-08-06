@@ -64,8 +64,8 @@ color: blue;
   
 }
 
-.g { /*green text */ 
-   color: RGB(32,178,170);
+.p { /*pink text */ 
+   color: rgb(226, 147, 192);
    font-weight: bold;
 }
 
