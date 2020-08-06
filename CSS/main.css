@@ -65,7 +65,8 @@ color: blue;
 }
 
 .g { /*green text */ 
-   color: green;
+   color: RGB(32,178,170);
+   font-weight: bold;
 }
 
 /* GP List CSS */
