@@ -64,10 +64,11 @@ color: blue;
   
 }
 
-#update {
+#update { /* update message */
     font-style: italic;
     font-size: smaller;
-    color: grey;
+    color: grey; 
+    margin-left: 2px;
 }
 
 .pnk { /*pink text */ 
