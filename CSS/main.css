@@ -64,6 +64,12 @@ color: blue;
   
 }
 
+#update {
+    font-style: italic;
+    font-size: smaller;
+    color: grey;
+}
+
 .pnk { /*pink text */ 
    color: rgb(226,147,192);
    font-weight: bold;
